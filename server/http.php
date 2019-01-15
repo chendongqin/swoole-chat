@@ -6,7 +6,7 @@
  * Time: 21:58
  */
 
-$http = new Swoole\Http\Server("127.0.0.1", 9501);
+$http = new Swoole\Http\Server("0.0.0.0", 9501);
 $http->set([
     'enable_static_handler'=> true,
     'document_root'=>__DIR__."/../public/static"
