@@ -14,7 +14,7 @@ use think\Db;
 
      public function index(){
          echo '123';
-         $this->fetch('index.phtml');
+//         $this->fetch('index.phtml');
      }
 
 
