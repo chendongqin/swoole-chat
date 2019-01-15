@@ -13,8 +13,8 @@ use think\Db;
  class Index extends Base{
 
      public function index(){
-         $this->assign('APP_PATH',APP_PATH);
-         $this->fetch();
+         echo '123';
+         $this->fetch('index.phtml');
      }
 
 
