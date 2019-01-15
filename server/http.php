@@ -37,7 +37,10 @@ $http->on('request', function ($request, $response) {
             $_SERVER[strtoupper($key)] = $value;
         }
     }
+    ob_start();
     think\App::run()->send();
-
+    $res = ob_get_contents();
+    ob_end_clean();
+    $response->end($res);
 });
 $http->start();
