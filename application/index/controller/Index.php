@@ -13,7 +13,7 @@ use think\Db;
  class Index extends Base{
 
      public function index(){
-        echo 'hello world';
+        $this->fetch();
      }
 
 
