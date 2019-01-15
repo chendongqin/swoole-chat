@@ -5,7 +5,6 @@
  * Date: 2019/1/15
  * Time: 21:58
  */
-use think;
 
 $http = new Swoole\Http\Server("127.0.0.1", 9501);
 $http->set([
