@@ -1,5 +1,15 @@
-<form >
-    用户名：<input type="text" name="'username">
-    密  码：<input type="password" name="'password">
-    <input type="button" value="登陆">
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title><?php if (isset($title) && $title): ?><?php echo $title; ?><?php else: ?><?php echo 'WS-聊天系统';?><?php endif;?></title>
+</head>
+<body>
+    <form >
+        用户名：<input type="text" name="'username">
+        密  码：<input type="password" name="'password">
+        <input type="button" value="登陆">
+    </form>
+</body>
+</html>
