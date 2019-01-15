@@ -17,5 +17,8 @@ use think\Db;
 //         $this->fetch('index.phtml');
      }
 
+     public function test(){
+         var_dump($_GET);
+     }
 
  }
