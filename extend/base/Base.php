@@ -21,6 +21,7 @@ class Base extends Controller{
 
 
     protected function returnJson($msg='',$status = false,$code=0,$data=array()){
+        $this->request;
         $jsonData = array('status'=>$status,'msg'=>$msg,'code'=>$code,'data'=>$data);
         return json($jsonData);
     }
