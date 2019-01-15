@@ -17,6 +17,7 @@ class Base extends Controller{
         $user = $session->get('user');
         $user = isset($user[0])?$user[0]:$user;
         $this->assign('user',$user);
+        $this->assign('APP_PATH',APP_PATH);
     }
 
 
