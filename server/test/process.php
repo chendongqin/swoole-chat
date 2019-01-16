@@ -22,9 +22,9 @@ $tasks = [
     'task6'=>1,
 ];
 $total = count($tasks);
-for ($i = 0;$i<$total;$i++){
+for ($i = 1;$i<=$total;$i++){
     $process = new swoole_process(function(swoole_process $pro) use($i,$tasks){
-        $res = doTask($tasks[$i]);
+        $res = doTask($tasks['task'.$i]);
         echo $res.PHP_EOL;
     },true);
     $pid = $process->start();
